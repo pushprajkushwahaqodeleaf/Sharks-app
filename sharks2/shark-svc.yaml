@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: shark-svc
   labels:
-    app: sharks-app
+    app: sharks-app-prod
 spec:
   selector:
-    app: sharks-app
+    app: sharks-app-prod
   ports:
     - protocol: TCP
       port: 8081

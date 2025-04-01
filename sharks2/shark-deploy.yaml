@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sharks-app
+  name: sharks-app-prod
   labels:
-    app: sharks-app
+    app: sharks-app-prod
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: sharks-app
+      app: sharks-app-prod
   template:
     metadata:
       labels:
-        app: sharks-app
+        app: sharks-app-prod
     spec:
       containers:
-      - name: sharks-app
+      - name: sharks-app-prod
         image: itsmrhashtag/sharksapp:latest
         ports:
         - containerPort: 8081
