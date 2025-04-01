@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: shark-svc
+  name: shark-svc-prod
   labels:
     app: sharks-app-prod
 spec:
